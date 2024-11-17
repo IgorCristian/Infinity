@@ -8,13 +8,21 @@
 
 aluno = {
     'nome': 'none',
-    'notas': []
+    'notas': [],
 }
 
 aluno['nome'] = input('Digite o nome do aluno: ')
 
+# Solicita as notas do aluno e guarda na lista de "notas" dentro do dicionário "aluno"
 for n in range(1,4):
-    aluno = input(f'Digite a {n}º nota do aluno: ')
+    nota = float(input(f'Digite a {n}º nota do aluno: '))
+    aluno['notas'].append(nota)
 
-aluno['media'] = sum(aluno.get('notas'))
-print(aluno)
+# Calcula a "media" das notas
+aluno['media'] = sum(aluno.get('notas')) / len(aluno.get('notas'))
+
+#  Condição que informa a situação do aluno e printa na tela.
+if aluno['media'] > 6:
+    print(f'O aluno {aluno['nome']} foi APROVADO com uma média de {aluno['media']} pontos.')
+else:
+    print(f'O aluno {aluno['nome']} foi REPROVADO com uma média de {aluno['media']} pontos.')

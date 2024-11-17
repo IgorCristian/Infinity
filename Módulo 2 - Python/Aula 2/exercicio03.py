@@ -3,3 +3,15 @@
 """python
 estoque = {"banana": 10, "laranja": 5, "uva": 8}
 """
+
+estoque = {
+    'banana': 10, 
+    'laranja': 5,
+    'uva': 8,
+}
+
+print(estoque)
+
+estoque.pop('laranja')
+
+print(estoque)
