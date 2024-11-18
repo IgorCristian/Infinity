@@ -23,6 +23,6 @@ aluno['media'] = sum(aluno.get('notas')) / len(aluno.get('notas'))
 
 #  Condição que informa a situação do aluno e printa na tela.
 if aluno['media'] > 6:
-    print(f'O aluno {aluno['nome']} foi APROVADO com uma média de {aluno['media']} pontos.')
+    print(f'O aluno {aluno['nome']} foi APROVADO com uma média de {aluno['media']:.2f} pontos.')
 else:
-    print(f'O aluno {aluno['nome']} foi REPROVADO com uma média de {aluno['media']} pontos.')
+    print(f'O aluno {aluno['nome']} foi REPROVADO com uma média de {aluno['media']:.2f} pontos.')
