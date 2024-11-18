@@ -35,3 +35,7 @@
     - Aula 01 | Revisão lógica de programação e introdução a listas.
     - Aula 02 | Dicionários
     - Aula 03 | 
+###
+
+#### Atalhos VS Code:
+    - ***Seta pra cima + Enter*** = Repete o último comando do console: (Executa o código novamente) 
