@@ -1,0 +1,2 @@
+# Ex03. Faça um programa que peça uma quantidade indefinida de numeros e adicione-os em uma lista, 
+# a cada valor inserido pergunte se o usuário deseja continuar, depois mostre o maior e o menor numero digitado.
