@@ -6,6 +6,6 @@ for n in range(1,4):
     valores = int(input(f"Insira o {n}º valor: "))
     lista_de_valores.append(valores)
 
-lista_ordenada = sorted(lista_de_valores)
+lista_de_valores.sort()
 
-print(lista_ordenada)
+print(lista_de_valores)

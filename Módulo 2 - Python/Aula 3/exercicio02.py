@@ -6,15 +6,16 @@
 # - Km maior que 100_000, - 20%
 # - Outros Km             - 15%
 
+# ENTRADA
 carro = {}
 
 carro["modelo"] = input("Digite o modelo do carro: ")
 carro["ano"] = input("Digite o ano do carro: ")
 carro["preco"]  = float(input("Digite o preço fip do carro: "))
 carro["kilometragem"] = float(input("Digite a kilometragem do carro: "))
-
 print(carro)
 
+# PROCESSAMENTO
 if carro["kilometragem"] > 300_000:
     valor = carro["preco"] - (0.5 * carro["preco"])
 elif carro["kilometragem"] > 200_000:
@@ -26,4 +27,10 @@ elif carro["kilometragem"] > 100_000:
 else:
     valor = carro["preco"] - (0.15 * carro["preco"])
 
+
+# SAÍDA
+print(f'Modelo: {carro['modelo']}')
+print(f'Ano: {carro['ano']}.')
+print(f'Preço Fip: R${carro['preco']}.')
+print(f'Kilometragem: {carro['kilometragem']}km.')
 print(f'O valor do carro é R${valor}.')
