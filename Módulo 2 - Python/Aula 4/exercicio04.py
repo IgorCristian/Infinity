@@ -9,3 +9,31 @@
     - "OBESIDADE_I"     -> imc <= 35
     - "OBESIDADE_II"    -> imc <= 40
     - "OBESIDADE_III"   -> imc > 40"""
+
+def calcular_imc(peso: float, altura: float) -> float:
+    imc = peso / (altura * altura)
+    print(f'O seu imc é: {round(imc, 2)}')
+    return imc
+    
+
+def classificar(imc: float) -> str:
+    if imc <= 18.5:
+        classificacao = "ABAIXO_DO_PESO"
+    elif imc <= 25:
+        classificacao = "PESO_IDEAL"
+    elif imc <= 30:
+        classificacao = "SOBREPESO"
+    elif imc <= 35:
+        classificacao = "OBESIDADE_I"
+    elif imc <= 40:
+        classificacao = "OBESIDADE_II"
+    else:
+        classificacao = "OBESIDADE_III"
+    print(f'Situação: {classificacao}')
+
+peso = float(input('Digite o peso: '))
+altura = float(input('Digite a altura: '))
+
+imc = calcular_imc(peso,altura)
+classificar(imc)
+

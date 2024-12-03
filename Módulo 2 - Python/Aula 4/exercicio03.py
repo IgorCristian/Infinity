@@ -1,15 +1,14 @@
-# Ex03. Você foi contratado por uma instituição de nutrição para ajuda-los em um sistema:
+# Ex03. Faça uma função chamada "calcular_area_retangulo" que recebe dois parametros ("base" e "altura") e retorna a area do retangulo.
 
-""" a. Faça uma função chamada "calcular_imc" que irá receber dois parametros ("peso" e "altura") e retornar o valor do imc
+def calcular_area_retangulo(base, altura):
+    area = base * altura
+    return area
 
-    b. Faça uma função chamada "classificar_"""
+base = float(input("Digite o tamanho da base em metros do retângulo: "))
+altura = float(input("Digite o tamanho da altura em metros do retângulo: "))
 
-def calcular_imc(peso,altura):
-    imc = peso / (altura * altura)
-    return imc
+calcular_area_retangulo(base, altura)
 
-def classificar(imc):
-    classificacao = ""
-    if imc < 18.5:
-        classificacao = "Magreza"
-    elif classificacao
+print(f'A área do retêngulo é {calcular_area_retangulo(base, altura)}m²')
+
+
