@@ -35,6 +35,8 @@
     - Aula 01 | Revisão lógica de programação e introdução a listas.
     - Aula 02 | Dicionários
     - Aula 03 | 
+    - Aula 04 | 
+    - Aula 05 | Extensão autodocstring
 ###
 
 #### Atalhos VS Code:
