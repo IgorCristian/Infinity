@@ -1,6 +1,14 @@
 # Ex01. Faça uma função "calcular_media" que recebe 3 numeros e retorna a média desses numeros.
 
-def calcular_media(n1,n2,n3):
+def calcular_media(n1: float, n2: float, n3: float) -> float:
+    """Essa função recebe 3 valores e retorna a média entre eles
+
+    Args:
+    
+
+    Returns:
+        float: Média dos valores
+    """    
     media = (n1 + n2 + n3) / 3
     return media
 

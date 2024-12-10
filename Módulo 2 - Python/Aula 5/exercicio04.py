@@ -9,4 +9,4 @@ def cadastrar_pessoa():
    pessoa["profissao"] = input("Digite a profissão: ")
    return pessoa
 
-print(cadastrar_pessoa())
+print(f"Usuário Cadastrado: {cadastrar_pessoa()}.")

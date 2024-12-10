@@ -14,6 +14,17 @@ def listar_nomes(nomes):
     for nome in nomes:
         print(f'- {nome}')
 
-nomes = ["Marcos", "Gabriel", "Lidia"]
+# Cria a lista e adiciona o primeiro nome:
+nomes = [(input('Adicione um nome na lista: '))]
 
+
+# Loop para adição de nomes na lista
+while True:
+    continua = input("Você deseja adicionar mais um nome na lista? (S/N)").lower()
+    if continua == "s":
+        nomes.append(input("Digite mais um nome: "))
+    else:
+        break
+
+# Chama função para listar nomes
 listar_nomes(nomes)
