@@ -40,4 +40,6 @@
 ###
 
 #### Atalhos VS Code:
-    - ***Seta pra cima + Enter*** = Repete o último comando do console: (Executa o código novamente) 
+    - ***Seta pra cima + Enter*** = Repete o último comando do console: (Executa o código novamente)
+    - ***Ctrl + D*** = Seleciona Caracteres Iguais 
+    - ***Shift + Alt + ⬇️/⬆️*** = Copia Linha onde está o ponteiro 
