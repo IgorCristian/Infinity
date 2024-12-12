@@ -35,8 +35,9 @@
     - Aula 01 | Revisão lógica de programação e introdução a listas.
     - Aula 02 | Dicionários
     - Aula 03 | 
-    - Aula 04 | 
-    - Aula 05 | Extensão autodocstring
+    - Aula 04 | Introdução a Funções
+    - Aula 05 | Funções Docstrings e Type Hint. (Extensão recomendada "autodocstring")
+    - Aula 06 | Desafio em grupo utilizando os novos aprendizados
 ###
 
 #### Atalhos VS Code:
