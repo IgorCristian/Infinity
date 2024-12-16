@@ -15,6 +15,8 @@
 # - A aplicação informará na tela todos os dados do cliente sorteado e se encerrará.
 
 import random
+import os
+import time
 
 vendas = {
     'nome': [],
@@ -22,12 +24,18 @@ vendas = {
     'endereco': []
 }
 
+def limpar(tempo):
+    time.sleep(tempo)
+    os.system("clear")# PARA WINDOWS USE NO LUGAR DE CLEAR O "cls"
 
 def registrar_nova_venda():
+    print('Registrando Venda'.center(30,'-'))
     vendas['nome'].append(input('Digite o nome do cliente: '))
     vendas['telefone'].append(input('Digite o telefone do cliente: '))
     vendas['endereco'].append(input('Digite o endereço do cliente: '))
     print('')
+    print("\033[32mVenda realizada com sucesso\033[m")
+    limpar(2)
     return vendas
     
 
@@ -56,18 +64,22 @@ while True:
     print('[4] - Encerrar')
     print('-'*30)
 
-    opcao = input('Digite uma opção: ')
+    opcao = input('\033[32mDigite uma opção:\033[m ')
 
     if opcao == '1':
+        limpar(1)
         listar_vendas()
     elif opcao == '2':
+        limpar(1)
         registrar_nova_venda()
     elif opcao == '3':
+        limpar(1)
         sortear()
     elif opcao == '4':
         encerrar = input('Tem certeza disso? Você perderá todas as informações. (S/N) ').lower()
         if encerrar == 's':
-            print('Programa encerrado'.center(30,'-'))
+            print('\033[36mPrograma encerrado\033[m'.center(30,'-'))
             break
     else:
-        print('Opção Inválida. Digite Novamente.')
+        print('\033[33mOpção Inválida. Digite Novamente.\033[m')
+        limpar(1)
