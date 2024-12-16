@@ -7,12 +7,12 @@ produtos = {}
 soma = 0
 
 # Solicita informações da compra e adiciona valor no carrinho
-for i in range(4):
+for i in range(5):
     produto = input('Digite o nome do produto: ')
-    produtos[produto] = float(input('Digite o valor do produto: ').replace(',',('.')))
+    produtos[produto] = float(input('Digite o valor do produto: ').replace(',','.'))
     soma += produtos[produto]
 
 print(produtos)
 
 # Exibe o valor da compra
-print(f'Valor total da compra: R${soma}')
+print(f'Valor total da compra: R${round(soma, 2)}')
