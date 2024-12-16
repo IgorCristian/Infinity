@@ -41,6 +41,12 @@
 ###
 
 #### Atalhos VS Code:
-    - ***Seta pra cima + Enter*** = Repete o último comando do console: (Executa o código novamente)
-    - ***Ctrl + D*** = Seleciona Caracteres Iguais 
-    - ***Shift + Alt + ⬇️/⬆️*** = Copia Linha onde está o ponteiro 
+    - "Seta pra cima + Enter" = Repete o último comando do console: (Executa o código novamente)
+    - "Ctrl + D" = Seleciona Caracteres Iguais 
+    - "Shift + Alt + ⬇️/⬆️" = Copia Linha onde está o ponteiro 
+    
+#### Funções mais usadas:
+    - round(resultado, 2) - Função para arredondar números de ponto flutuante para o número especificado de casas decimais.
+    - .lower() - Transforma letras maiúsculas em minúsculas.
+    - .upper() - Transforma letras minúsculas em maiúsculas.
+    - .replace(',','.') - Substitui todas as ocorrências de um caractere por outro em uma string.
