@@ -38,6 +38,9 @@
     - Aula 04 | Introdução a Funções
     - Aula 05 | Funções Docstrings e Type Hint. (Extensão recomendada "autodocstring")
     - Aula 06 | Desafio em grupo utilizando os novos aprendizados
+    - Aula 07 | Bibliotecas e modulação de projeto. (3 Bibliotecas bacanas: Pyautogui, Selenium e pandas)
+
+
 ###
 
 #### Atalhos VS Code:
